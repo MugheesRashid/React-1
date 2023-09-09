@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import PropTypes from 'prop-types'
 
 export default function Textarea(props) {
         
@@ -26,7 +25,7 @@ export default function Textarea(props) {
  let num = 0;
 
     const capitalcase =()=>{
-        if (num == 0) {
+        if (num === 0) {
           document.querySelector('textarea').style.textTransform = "capitalize";
           document.querySelector('#preview').style.textTransform = "capitalize";
           document.querySelector('.capital').innerHTML = "Capitalize Mode On";
