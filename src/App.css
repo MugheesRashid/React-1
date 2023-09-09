@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+.dark{
+    background-color: #000324;
+    color: #fff;
+}
+.light{
+    background-color: #fff;
+}
+.custom1{
+    background-color: #0f2605;
+}
+.custom1:hover{
+    background-color: #0f2605;
+}
+.custom2 {
+     background-color: #2f0606
+}
+.custom2:hover {
+    background-color: #2f0606
+}
+.custom3 {
+    background-color: #2f0624
+}
+.custom3:hover {
+    background-color: #2f0624
+}
