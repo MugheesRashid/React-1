@@ -1,16 +1,15 @@
 
-import { Router } from 'react-router-dom';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import Textarea from './components/Textarea';
 import React,{useState} from 'react'
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 
 function App() {
@@ -70,17 +69,16 @@ function App() {
   return (
    <>
   
-   {/*<Router>*/}
-   <Navbar title='Article Analyzer' Dark={Dark} about="About" theme={theme1} mode={mode} text={textMode}/>
+   <Router>
+  <Navbar title='Article Analyzer' Dark={Dark} about="About" theme={theme1} mode={mode} text={textMode}/>
   <Alert alert={alert} />
-  <Textarea showAlert={showAlert} style={style} />
+  {/* <Textarea showAlert={showAlert} style={style} /> */}
 
-     {/* <Routes>
+      <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<Textarea showAlert={showAlert} style={style} />} />
         </Routes>
-        </Router> */}
-   {/* </Router> */}
+        </Router> 
    </>
   );
 }
